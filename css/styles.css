@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    background-color: #ffcc01;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+}
+
+#tap-user a{
+    align-items: center;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+}
+
+#left-menu{
+    width: 20%;
+    max-width: 300px;
+    padding: 20px;
+}
+
+#item-left-menu{
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#item-left-menu img{
+    width: 35px;
+    height: 35px;
+}
+#section-content{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+    
+    width: 100%;
+    
+    padding: 30px;
+}
+
+footer{
+    background-color: rgb(240, 240, 240);
+    /* background-color: #ffcc016e; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#github-icon {
+    transition: all 0.3s ease;
+}
+
+#github-icon:hover {
+    /* background-color: black; */
+    content: url('https://github.githubassets.com/favicons/favicon-dark.png'); /* Replace with the path to your hover image */
+}
