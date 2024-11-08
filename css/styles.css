@@ -28,6 +28,19 @@ a {
     transform: scale(1.15);
 }
 
+input, select{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+button{
+    padding: 5px 5px;
+    border: none;
+    border-radius: 10px;
+}
+
 header {
     background-color: var(--brand-color);
     padding: 10px 30px;
@@ -86,9 +99,18 @@ main {
     align-items: center;
     background-color: var(--gray-content);
 
+    gap:30px;
     width: 100%;
 
     padding: 30px;
+}
+
+#formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
 }
 
 footer {
