@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartParking</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href=".../assets/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='assets/ico.png') }}" type="image/x-icon">
 </head>
 
 <body>
     <header class="box">
         <div>
             <a id="tap-logo" href="">
-                <img id="logo" src="../assets/ico.png" alt="SmartParking">
+                <img id="logo" src="{{ url_for('static', filename='assets/ico.png') }}" alt="SmartParking">
             </a>
         </div>
         <div class="relleno"></div>
         <div id="tap-user">
             <a class="box" href=""> <!-- Link acción usuario -->
-                <img src="../assets/user.svg" alt=""> <!--logoUsuario-->
+                <img src="{{ url_for('static', filename='assets/user.svg') }}" alt=""> <!--logoUsuario-->
                 <p>Administrador</p>
             </a>
         </div>
@@ -27,23 +27,23 @@
     <main>
         <section id="left-menu"> <!-- Menú -->
             <a href="" id="item-left-menu" class="box">
-                <img src="../assets/menu/dashboard.png" alt="">
+                <img src="{{ url_for('static', filename='assets/menu/dashboard.png') }}" alt="">
                 <p>Dashboard</p>
             </a>
             <a href="" id="item-left-menu" class="box actual-option">
-                <img src="../assets/menu/ingreso.png" alt="">
+                <img src="{{ url_for('static', filename='assets/menu/ingreso.png') }}" alt="">
                 <p>Ingreso de vehiculos</p>
             </a>
             <a href="" id="item-left-menu" class="box">
-                <img src="../assets/menu/salida.png" alt="">
+                <img src="{{ url_for('static', filename='assets/menu/salida.png') }}" alt="">
                 <p>Salida de vehiculos</p>
             </a>
             <a href="" id="item-left-menu" class="box">
-                <img src="../assets/menu/pay.png" alt="">
+                <img src="{{ url_for('static', filename='assets/menu/pay.png') }}" alt="">
                 <p>Pago</p>
             </a>
             <a href="" id="item-left-menu" class="box">
-                <img src="../assets/menu/map.png" alt="">
+                <img src="{{ url_for('static', filename='assets/menu/map.png') }}" alt="">
                 <p>Visualización 2D</p>
             </a>
         </section> <!-- Menú -->
@@ -82,14 +82,14 @@
             <p>SmartParking © 2024</p>
         </div>
         <div id="github" class="box">
-            <a href="https://github.com/dvar98/html.git" target="_blank">
-                <img id="github-icon" src="../assets/github-favicon.png" alt="">
+            <a href="git@github.com:reyandres015/frontend-smart-parking.git" target="_blank">
+                <img id="github-icon" src="{{ url_for('static', filename='assets/github-favicon.png') }}" alt="">
             </a>
         </div>
 
     </footer>
 </body>
 
-<script src="../js/ingreso.js"></script>
+<script src="{{ url_for('static', filename='js/ingreso.js') }}"></script>
 
 </html>
